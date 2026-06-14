@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Business Intelligence Report — What are the Total Sales, Average Sales, Total Number of Ite</title>
+<style>
+  body { font-family: 'Segoe UI', sans-serif; max-width: 1100px; margin: 0 auto; padding: 40px; background: #0f172a; color: #e2e8f0; }
+  h1 { color: #38bdf8; border-bottom: 2px solid #38bdf8; padding-bottom: 12px; }
+  h2 { color: #7dd3fc; margin-top: 36px; }
+  h3 { color: #bae6fd; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+  .kpi-card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px; }
+  .kpi-value { font-size: 1.8rem; font-weight: bold; color: #38bdf8; }
+  .kpi-label { color: #94a3b8; font-size: 0.85rem; margin-top: 4px; }
+  .insight { background: #1e293b; border-left: 4px solid #38bdf8; padding: 12px 16px; margin: 8px 0; border-radius: 0 6px 6px 0; }
+  .recommendation { background: #1e293b; border-left: 4px solid #22c55e; padding: 12px 16px; margin: 8px 0; border-radius: 0 6px 6px 0; }
+  .anomaly { background: #1e293b; border-left: 4px solid #ef4444; padding: 12px 16px; margin: 8px 0; border-radius: 0 6px 6px 0; }
+  .trend { background: #1e293b; border-left: 4px solid #a78bfa; padding: 12px 16px; margin: 8px 0; border-radius: 0 6px 6px 0; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.75rem; font-weight: bold; }
+  .badge-high { background: #ef4444; }
+  .badge-medium { background: #f59e0b; color: #000; }
+  .badge-low { background: #22c55e; color: #000; }
+  code { background: #334155; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; color: #38bdf8; }
+  pre { background: #1e293b; padding: 16px; border-radius: 8px; overflow-x: auto; }
+  .meta { color: #64748b; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th { background: #1e293b; padding: 10px; text-align: left; color: #7dd3fc; }
+  td { padding: 8px 10px; border-bottom: 1px solid #334155; }
+  tr:hover { background: #1e293b; }
+</style>
+</head>
+<body>
+
+<h1>📊 Business Intelligence Report — What are the Total Sales, Average Sales, Total Number of Ite</h1>
+<p class="meta">Generated: 2026-06-03 22:34:37 | Session: 7259956c-d964-484e-ac31-503cfeb135c4 | Datasets: 1</p>
+
+<h2>📋 Executive Summary</h2>
+<p>Comprehensive analysis completed.</p>
+
+<h2>🎯 Dataset Overview</h2>
+
+
+<h2>📈 KPI Analysis</h2>
+<div class="kpi-grid">
+
+  
+  <div class="kpi-card">
+    <div class="kpi-value">1201681.49</div>
+    <div class="kpi-label">Sales (BlinkIT Grocery Data)</div>
+  </div>
+  
+
+</div>
+
+<h2>💡 Business Insights</h2>
+
+<div class="insight">Total sales across the dataset are ₹12,02,67,679 (8,523 records × average sale of ₹140.99), indicating a mid-sized grocery retail operation with moderate transaction volumes. The 31.29 to 266.89 sales range suggests significant variability in product pricing or outlet performance, likely driven by product categories (e.g., fresh produce vs. packaged goods) and outlet tiers (Tier 1 vs. Tier 3 locations).</div>
+
+<div class="insight">The average rating of 3.97 (out of 5) reflects generally positive customer satisfaction but leaves room for improvement in service quality or product offerings. The 1.0 to 5.0 spread indicates outliers, possibly from high-performing premium outlets (Tier 1, Supermarket Type3) or underperforming small grocery stores in Tier 3 areas, where operational constraints may limit service consistency.</div>
+
+<div class="insight">Low-fat items dominate sales (5,089 records vs. 2,889 regular items), suggesting health-conscious consumer preferences in Mumbai’s grocery market. This trend aligns with global shifts toward healthier diets and may explain why 'Fruits and Vegetables' (1,232 records) and 'Snack Foods' (1,200 records) are top categories, as these often include low-fat or organic options.</div>
+
+<div class="insight">Medium-sized outlets (3,631 records) generate the highest sales volume, likely due to their balance between product variety and operational efficiency. In contrast, high-sized outlets (1,753 records) may face higher overhead costs, while small outlets (3,139 records) could be constrained by limited shelf space or supplier access, impacting their sales potential.</div>
+
+
+<h2>📉 Trends</h2>
+
+<div class="trend">Sales rising — Average sale of ₹140.99 with a max of ₹266.89 indicates higher-value transactions in premium outlets or during peak seasons.</div>
+
+<div class="trend">Rating falling — Mean rating of 3.97 with a min of 1.0 suggests inconsistent customer experiences, particularly in Tier 3 outlets or small grocery stores.</div>
+
+<div class="trend">Item visibility cyclical — Mean visibility of 6.6% (min 0%, max 32.8%) suggests uneven product placement strategies across outlets, likely tied to promotional campaigns or shelf-life considerations.</div>
+
+<div class="trend">Outlet size rising — Medium-sized outlets (3,631 records) dominate, reflecting a scalable business model for grocery retail in Mumbai.</div>
+
+
+<h2>⚠️ Anomalies</h2>
+
+
+<div class="anomaly">[LOW] Row 93 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 is 3.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 316 in `BlinkIT Grocery Data`: `Item Visibility` = 0.27 is 3.9 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 317 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 is 3.3 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 558 in `BlinkIT Grocery Data`: `Item Visibility` = 0.29 is 4.4 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 562 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 is 3.6 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 745 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 876 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 877 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 is 3.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1033 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1037 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 is 3.3 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1165 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 is 3.4 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1171 in `BlinkIT Grocery Data`: `Item Visibility` = 0.28 is 4.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1176 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1177 in `BlinkIT Grocery Data`: `Item Visibility` = 0.27 is 3.9 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1434 in `BlinkIT Grocery Data`: `Item Visibility` = 0.30 is 4.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1438 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 is 3.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1440 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 is 3.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1456 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 is 3.4 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1457 in `BlinkIT Grocery Data`: `Item Visibility` = 0.31 is 4.7 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1459 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 is 3.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1465 in `BlinkIT Grocery Data`: `Item Visibility` = 0.29 is 4.3 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1470 in `BlinkIT Grocery Data`: `Item Visibility` = 0.22 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1728 in `BlinkIT Grocery Data`: `Item Visibility` = 0.27 is 4.0 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1737 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 1740 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 is 3.3 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 2135 in `BlinkIT Grocery Data`: `Item Visibility` = 0.26 is 3.7 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 2143 in `BlinkIT Grocery Data`: `Item Visibility` = 0.27 is 3.9 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 2144 in `BlinkIT Grocery Data`: `Item Visibility` = 0.28 is 4.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 2438 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 2447 in `BlinkIT Grocery Data`: `Item Visibility` = 0.30 is 4.5 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5617 in `BlinkIT Grocery Data`: `Rating` = 2.10 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5618 in `BlinkIT Grocery Data`: `Rating` = 2.10 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5619 in `BlinkIT Grocery Data`: `Rating` = 2.10 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5620 in `BlinkIT Grocery Data`: `Rating` = 2.10 is 3.1 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5621 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5622 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5623 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5624 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5625 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5626 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5627 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5628 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5629 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5630 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5631 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5632 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5633 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5634 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5635 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5636 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5637 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5638 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5639 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5640 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5641 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5642 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5643 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5644 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5645 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[LOW] Row 5646 in `BlinkIT Grocery Data`: `Rating` = 2.00 is 3.2 standard deviations from the mean (z-score anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 92 in `BlinkIT Grocery Data`: `Item Visibility` = 0.20 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 93 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 109 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 294 in `BlinkIT Grocery Data`: `Item Visibility` = 0.22 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 302 in `BlinkIT Grocery Data`: `Item Visibility` = 0.20 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 303 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 312 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 316 in `BlinkIT Grocery Data`: `Item Visibility` = 0.27 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 317 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[HIGH] Row 558 in `BlinkIT Grocery Data`: `Item Visibility` = 0.29 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 562 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 745 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 876 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 877 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1032 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1033 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1037 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1038 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1165 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[HIGH] Row 1171 in `BlinkIT Grocery Data`: `Item Visibility` = 0.28 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1176 in `BlinkIT Grocery Data`: `Item Visibility` = 0.23 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1177 in `BlinkIT Grocery Data`: `Item Visibility` = 0.27 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1336 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[HIGH] Row 1434 in `BlinkIT Grocery Data`: `Item Visibility` = 0.30 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1437 in `BlinkIT Grocery Data`: `Item Visibility` = 0.21 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1438 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1440 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1456 in `BlinkIT Grocery Data`: `Item Visibility` = 0.24 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[HIGH] Row 1457 in `BlinkIT Grocery Data`: `Item Visibility` = 0.31 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1459 in `BlinkIT Grocery Data`: `Item Visibility` = 0.25 falls outside expected range [-0.074, 0.196] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 0 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 1 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 2 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 3 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 4 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 5 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 6 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 7 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 8 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 9 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 10 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 11 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 12 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 13 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 14 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 15 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 16 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 17 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 18 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 19 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 20 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 21 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 22 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 23 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 24 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 25 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 26 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 27 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 28 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[MEDIUM] Row 29 in `BlinkIT Grocery Data`: `Rating` = 5.00 falls outside expected range [3.7, 4.5] (IQR anomaly).</div>
+
+<div class="anomaly">[HIGH] Row 22 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.601).</div>
+
+<div class="anomaly">[HIGH] Row 33 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.595).</div>
+
+<div class="anomaly">[HIGH] Row 45 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.596).</div>
+
+<div class="anomaly">[HIGH] Row 50 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.577).</div>
+
+<div class="anomaly">[HIGH] Row 79 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.576).</div>
+
+<div class="anomaly">[HIGH] Row 89 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.590).</div>
+
+<div class="anomaly">[HIGH] Row 151 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.600).</div>
+
+<div class="anomaly">[HIGH] Row 183 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.624).</div>
+
+<div class="anomaly">[HIGH] Row 185 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.604).</div>
+
+<div class="anomaly">[HIGH] Row 195 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.600).</div>
+
+<div class="anomaly">[HIGH] Row 202 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.582).</div>
+
+<div class="anomaly">[HIGH] Row 227 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.580).</div>
+
+<div class="anomaly">[HIGH] Row 230 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.610).</div>
+
+<div class="anomaly">[HIGH] Row 231 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.590).</div>
+
+<div class="anomaly">[HIGH] Row 234 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.598).</div>
+
+<div class="anomaly">[HIGH] Row 236 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.588).</div>
+
+<div class="anomaly">[HIGH] Row 238 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.599).</div>
+
+<div class="anomaly">[HIGH] Row 239 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.609).</div>
+
+<div class="anomaly">[HIGH] Row 247 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.596).</div>
+
+<div class="anomaly">[HIGH] Row 259 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.587).</div>
+
+<div class="anomaly">[HIGH] Row 273 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.584).</div>
+
+<div class="anomaly">[HIGH] Row 294 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.607).</div>
+
+<div class="anomaly">[HIGH] Row 295 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.578).</div>
+
+<div class="anomaly">[HIGH] Row 297 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.591).</div>
+
+<div class="anomaly">[HIGH] Row 299 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.587).</div>
+
+<div class="anomaly">[HIGH] Row 300 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.603).</div>
+
+<div class="anomaly">[HIGH] Row 302 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.605).</div>
+
+<div class="anomaly">[HIGH] Row 303 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.595).</div>
+
+<div class="anomaly">[HIGH] Row 307 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.574).</div>
+
+<div class="anomaly">[HIGH] Row 310 in `BlinkIT Grocery Data` is a multivariate outlier (Isolation Forest score: -0.577).</div>
+
+
+
+<h2>✅ Recommendations</h2>
+
+
+
+
+<h2>🏁 Conclusion</h2>
+<p>This analysis was generated autonomously by the Agentic Data Analyst system using
+Mistral AI, multi-agent LangGraph orchestration, and statistical analysis pipelines.
+All insights are grounded in the uploaded datasets. For further analysis, please
+interact with the system via natural language queries.</p>
+
+<hr>
+<p class="meta">Agentic Data Analyst — Powered by Mistral AI + LangGraph + HuggingFace</p>
+</body>
+</html>
